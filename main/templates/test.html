@@ -7,5 +7,9 @@
 </head>
 <body>
     <h2>This is test page</h2>
+    {% for todo in todo_list%}
+       <h3 style="background-color: rgb(245, 192, 242);"> {{ todo.text }} - {{ todo.created_at}}</h3> 
+
+    {% endfor %}
 </body>
 </html>
